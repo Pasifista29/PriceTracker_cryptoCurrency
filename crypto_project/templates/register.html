@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/styles/register.css">
+    <title>Cryptance</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="/login" class="sign-in-form" method="POST" autocomplete="off">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+              {% for category,message in messages %}
+                  <div class="alert alert-{{category}}">{{message}}</div>
+              {% endfor %}
+          {% endif %}
+          {% endwith %}
+
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username" name="username"/>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password"  id="password" name="password"/>
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="/signup" class="sign-up-form" method="POST">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username" name="username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt minima iure?</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos incidunt minima iure?</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- autocomplete script -->
+    <script>
+        $(document).ready(function(){
+            $("form").attr("autocomplete","off");
+        });
+      </script>
+
+    <!-- script dala hai  1)index.js  2)register.js-->
+    <script>var btc = document.getElementById("bitcoin");
+        var eth = document.getElementById("ethereum");
+        var doge = document.getElementById("dogecoin");
+        
+        var settings = {
+            "async": true,
+            "scrossDomain": true,
+            "url": 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin&vs_currencies=usd',
+            "method": "GET",
+            "headers": {}
+        }
+        $.ajax(settings).done(function(response){
+            btc.innerHTML = response.bitcoin.usd
+            eth.innerHTML = response.ethereum.usd
+            doge.innerHTML = response.dogecoin.usd
+        });
+        
+        const options = {method: 'GET', headers: {'x-cg-demo-api-key': 'CG-yX6gMYSJz4b1beoYHebJw7gY'}};
+        
+        // fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin&vs_currencies=usd', options)
+        //   .then(response => response.json())
+        //   .then(response => console.log(response))
+        //   .catch(err => console.error(err));
+        
+        </script>
+        <script>const sign_in_btn = document.querySelector("#sign-in-btn");
+            const sign_up_btn = document.querySelector("#sign-up-btn");
+            const container = document.querySelector(".container");
+            const sign_in_btn2 = document.querySelector("#sign-in-btn2");
+            const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+            sign_up_btn.addEventListener("click", () => {
+                container.classList.add("sign-up-mode");
+            });
+            sign_in_btn.addEventListener("click", () => {
+                container.classList.remove("sign-up-mode");
+            });
+            sign_up_btn2.addEventListener("click", () => {
+                container.classList.add("sign-up-mode2");
+            });
+            sign_in_btn2.addEventListener("click", () => {
+                container.classList.remove("sign-up-mode2");
+            });</script>
+    <!-- <script src="index.html"></script>
+    <script src="/register.js"></script> -->
+</body>
+</html>
