@@ -1,0 +1,488 @@
+@media (max-width: 1024px) {
+    .coin-list{
+        align-items: center;
+    }
+
+    .download_options_image img {
+        height: 50vw;
+    }
+
+    .download_options-contents {
+        height: 55%;
+    }
+
+    .account-creation-header h1 {
+        margin-bottom: 5vw;
+    }
+
+    .security {
+        height: 80%;
+        margin-top: 0vw;
+    }
+
+    .security {
+        margin-top: 5vw;
+    }
+    .offer-banner {
+        height: 25%;
+        margin-top: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 10%;
+    }
+    .content {
+        height: 75%;
+    }
+    .coin-list {
+        height: 15%;
+    }
+    .logo {
+        width: 6vw;
+        height: 6vw;
+        cursor: pointer;
+        margin: 1vw;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav button {
+        display: none;
+    }
+    nav .menu {
+        display: block;
+        margin: 1vw;
+        font-size: 3vw;
+    }
+
+    .content h1 {
+        font-size: 9vw;
+    }
+    .content p {
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+    }
+    .content .btn {
+        width: 20vw;
+        font-size: 2vw;
+        padding: 1.2vw 1.7vw;
+    }
+
+    /* /////////////////////////// */
+
+    .coin {
+        height: 70%;
+    }
+
+    .coin img {
+        height: 6vw;
+    }
+
+    .coin div {
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+    /* ///////////////////////////////////// */
+
+    .download_options {
+        /* border: 1px solid white; */
+    }
+
+    .download_options_image img {
+        height: 60vw;
+    }
+    .download_options-contents {
+        height: 50%;
+    }
+
+    .desktop-download-options div {
+        height: 3vw;
+        text-align: center;
+        line-height: 3vw;
+        font-size: 2vw;
+        
+    }
+    /* ////////////////////////////// */
+
+    .account-creation-header h1 {
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+
+    .account-creation-process {
+        height: 70%;
+        /* border: 1px solid white; */
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 2vw;
+    }
+    .account-creation-process div{
+        height: 40%;
+        width: 100%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5vw;
+        text-align: left;
+
+    }
+
+    .account_creation-one{
+        height: 70%;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .account_creation-two{
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .account-creation-process i {
+        font-size: 2.8vw;
+        margin-bottom: 2vw;
+    }
+
+    .account-creation-process h3 {
+        font-size: 1.9vw;
+        /* margin-bottom: 1vw; */
+    }
+    .account-creation-process p {
+        color: gray;
+        width: 90%;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        text-align: left;
+    }
+
+    .users-graph {
+        width: 100%;
+        height: 25vw;
+    }
+    
+    .create-a-account-sec_one , .add-funds-sec_one , .start-investing-sec_one{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid white; */
+    }
+
+    /* ///////////////////////////////////////// */
+
+    .security {
+        height: 90%;
+    }
+    .security-heading h1 {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .security-contents div {
+        /* border: 1px solid rgb(174, 174, 174); */
+        height: 29vw;
+        width: 40vw;
+    }
+    .security-contents div i {
+        font-size: 3.3vw;
+        margin-bottom: 4vw;
+    }
+    .security-contents h3 {
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+    .security-contents p {
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+    }
+
+    /* ////////////////////////////// */
+
+    .offer-banner {
+        height: 20%;
+    }
+
+    .offer-content p:nth-child(2) {
+        margin-top: 1vw;
+        font-size: 1.8vw;
+    }
+
+    .subscribe input {
+        font-size: 1.5vw;
+    }
+    /* /////////////////////////// */
+
+    .footer-section-three-contact p {
+        font-size: 1.3vw;
+    }
+
+    .footer-section-four p {
+        font-size: 1.3vw;
+        line-height: 2.3vw;
+        color: gray;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 10vw;
+        height: 10vw;
+        
+    }
+    nav .menu {
+        display: block;
+        font-size: 5.5vw;
+    }
+
+    .content {
+        justify-content: center;
+        row-gap: 7vw;
+    }
+
+    .content h1 {
+        font-size: 15vw;
+    }
+
+    .content p {
+        font-size: 4.5vw;
+        line-height: 6vw;
+    }
+    .content .btn {
+        width: 35vw;
+        padding: 3vw 4vw;
+        font-size: 3.4vw;
+    }
+
+    .coin {
+        height: 50%;
+    }
+
+    .coin img {
+        height: 10vw;
+    }
+    .coin div {
+        font-size: 2.9vw;
+        margin-left: 2vw;
+    }
+    /* //////////////////////////////// */
+
+    .download_options {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download_options_image img {
+        height: 80vw;
+    }
+
+    .download_options_image{
+        height: 60%;
+    }
+    .download_options-contents {
+        height: 40%;
+        width: 100%;
+    }
+
+    .download_options-contents h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    .qrCode img {
+        border-radius: 2vw;
+        height: 20vw;
+    }
+    .qrCode p {
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    .desktop-download-options div {
+        line-height: 5vw;
+        font-size: 4vw;
+    }
+    /* ////////////////////////////////////////////// */
+
+    .account_creation {
+        height: 100%;
+    }
+    
+    .account-creation-header h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    
+    .create-a-account-sec_one , .add-funds-sec_one , .start-investing-sec_one{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; 
+        /* border: 1px solid white; */
+    }
+    
+    .account-creation-process i {
+        text-align: right;
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .account-creation-process h3 {
+        font-size: 4.5vw;
+        margin-bottom: 1vw;
+    }
+    
+    .account-creation-process p {
+        color: gray;
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+    
+    /* /////////// */
+    
+    .users-graph {
+        width: 100%;
+        height: 100vw;
+    }
+
+    /* ///////////////////////////////////////// */
+
+    .security {
+        height: 135%;
+    }
+    .security-heading h1 {
+        font-size: 7vw;
+        margin-bottom: 5vw;
+    }
+    
+    .security-contents {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw 15vw;
+    }
+    
+    .security-contents div {
+        /* border: 1px solid rgb(174, 174, 174); */
+        height: 40vw;
+        width: 90%;
+    }
+    .security-contents div i {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    .security-contents h3 {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+    .security-contents p {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    /* ////////////////////////////// */
+
+    .offer-banner {
+        height: 15%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .offer-content p:nth-child(2) {
+        margin-top: 1vw;
+        font-size: 1.8vw;
+    }
+    .offer-content {
+        width: 100%;
+    }
+
+    .offer-content p {
+        font-family: "Crimson Text", serif;
+        font-size: 5vw;
+        line-height: 4vw;
+    }
+    .offer-content p:nth-child(2) {
+        font-size: 2.5vw;
+    }
+    .subscribe {
+        width: 100%;
+    }
+    .subscribe input {
+        height: 4vw;
+        font-size: 2vw;
+        width: 45vw;
+        padding: 1.2vw 2.2vw 1.2vw 2.2vw;
+    }
+    .subscribe button {
+        position: relative;
+        height: 4vw;
+        font-size: 2vw;
+        width: 45vw;
+        padding: 1.1vw 2.2vw 1.4vw 2.2vw;
+    }
+    /* /////////////////////////// */
+
+    .footer-section-one h1{
+        font-size: 5vw;
+    }
+    
+    .footer-section-one img {
+        height: 20vw;
+        width: 20vw;
+        padding: 4vw;
+        /* border-right: 1px solid white; */
+    }
+    .footer-section-two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5vw 0vw;
+        /* column-gap: 100vw; */
+        row-gap: 5vw;
+    }
+
+    .footer-section-two ul{
+        width: 100%;
+    }
+    .footer-section-two ul h3 {
+        font-size: 4vw;
+    }
+    .footer-section-two ul li {
+        line-height: 3.9vw;
+        font-size: 3vw;
+    }
+    
+    .footer-section-three-contact h3 {
+        font-size: 4vw;
+    }
+    .footer-section-three-contact p {
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+
+    .footer-section-four h3 {
+        font-size: 4vw;
+    }
+    .footer-section-four p {
+        font-size: 2vw;
+        line-height: 4vw;
+        color: gray;
+    }
+    .footer-section-five p{
+        font-size: 2vw;
+    }
+    .footer-section-five a {
+        font-size: 2.2vw;
+    }
+}
